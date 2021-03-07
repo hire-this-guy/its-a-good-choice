@@ -1,0 +1,19 @@
+/* TODO hover styles */
+.bpm-button {
+	background: var(--c-revolver);
+	color: var(--c-blue);
+	border-radius: 5px;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+	height: 35px;
+	min-width: 86px;
+	padding: 0 16px;
+	white-space: nowrap;
+	line-height: 35px;
+	border: 0;
+	transition: all var(--t-default);
+}
+
+.bpm-button.is-active {
+	background: var(--c-blue);
+	color: var(--c-cinder);
+}

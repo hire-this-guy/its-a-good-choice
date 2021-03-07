@@ -6,6 +6,8 @@
 	--c-cinder: #161020;
 	--c-tradewind: #64bca4;
 
+	--t-default: 0.2s;
+
 	--c-app-bg: var(--c-cinder);
 	--c-app-txt: var(--c-white);
 }
