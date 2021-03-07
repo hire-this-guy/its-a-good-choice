@@ -1,9 +1,11 @@
 import React from "react";
 import "./Visualisation.css";
+import { useBPM } from "../../bpmProvider";
 
 function Visualisation() {
+    const [bpm] = useBPM();
     return (
-        <div className="circle">72</div>
+        <div className="circle">{bpm}</div>
     );
 }
 
