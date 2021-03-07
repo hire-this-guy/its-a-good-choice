@@ -1,0 +1,16 @@
+.circle {
+	--s-circle-diameter: 132px;
+
+	display: inline-block; /* TODO center independently from body's text-align */
+	width: var(--s-circle-diameter);
+	height: var(--s-circle-diameter);
+	border-radius: 50%;
+	color: var(--c-cinder);
+	background: var(--c-tradewind);
+	font-size: 24px;
+	letter-spacing: 1.33px;
+	text-align: center;
+	line-height: var(--s-circle-diameter);
+
+	margin: 116px auto;
+}
