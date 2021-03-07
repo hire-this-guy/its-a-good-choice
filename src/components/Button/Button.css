@@ -11,6 +11,7 @@
 	line-height: 35px;
 	border: 0;
 	transition: all var(--t-default);
+	cursor: pointer;
 }
 
 .bpm-button.is-active {
