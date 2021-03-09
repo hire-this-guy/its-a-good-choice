@@ -10,6 +10,8 @@
 
 	--c-app-bg: var(--c-cinder);
 	--c-app-txt: var(--c-white);
+
+	--c-btn-hover: #332048;
 }
 
 * {

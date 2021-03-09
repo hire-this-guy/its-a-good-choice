@@ -1,4 +1,3 @@
-/* TODO hover styles */
 .bpm-button {
 	background: var(--c-revolver);
 	color: var(--c-blue);
@@ -12,6 +11,9 @@
 	border: 0;
 	transition: all var(--t-default);
 	cursor: pointer;
+}
+.bpm-button:hover {
+	background: var(--c-btn-hover);
 }
 
 .bpm-button.is-active {
