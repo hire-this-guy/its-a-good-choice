@@ -1,0 +1,18 @@
+.songlist {
+	font-size: 14px;
+}
+
+.songlist__title {
+	font-size: inherit;
+	color: var(--c-blue);
+	font-weight: 900;
+	letter-spacing: 0.78px;
+	margin-top: 32px;
+}
+
+.songlist__list {
+	margin-top: 3px;
+}
+.songlist__entry {
+	margin-top: 0.5em;
+}
