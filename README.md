@@ -1,3 +1,12 @@
+## TODO
+
+- animation
+
+## Choices I made
+
+- simple css styling - as long as I can get away without introducing new tools, I'm fine with that. And syntax of css variables is not that bad once you get used to it
+- no redux - it would be an overkill for such a simple app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
