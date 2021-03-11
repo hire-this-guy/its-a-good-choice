@@ -2,7 +2,15 @@
 
 Among other small things these are main topics that require polishing/doing
 
-[ ] sound [ ] tests [ ] use proper font [ ] readme [ ] check if naming makes sense
+[ ] sound
+
+[ ] tests
+
+[+] use proper font
+
+[ ] readme
+
+[ ] check if naming makes sense
 
 ## Choices I made
 
