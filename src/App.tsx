@@ -5,6 +5,7 @@ import BpmSelector from "./components/BpmSelector/BpmSelector";
 import Visualisation from "./components/Visualisation/Visualisation";
 import { BPMProvider } from "./bpmProvider";
 import Songlist from "./components/Songlist/Songlilst";
+import Sound from "./components/Sound/Sound";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Visualisation/>
             <BpmSelector/>
             <Songlist/>
+            <Sound/>
         </BPMProvider>
     </div>
   </div>
