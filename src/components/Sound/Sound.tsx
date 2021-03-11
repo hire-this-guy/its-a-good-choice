@@ -1,21 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Sound.css";
 import { useBPM } from "../../bpmProvider";
+import { changeBPM, initSound, startSound, stopSound } from "../../metronome";
 
 function Sound() {
     const [soundEnabled, setSoundEnabled] = useState(false);
     const [bpm] = useBPM();
 
-    const initSound = () => {
-    }
+
+    useEffect(initSound, []);
+    useEffect(() => {
+        changeBPM(bpm)
+    }, [bpm]);
 
     const toggleSound = () => {
-        console.log('toggle', soundEnabled)
         setSoundEnabled(!soundEnabled);
-        console.log('toggle after set', soundEnabled)
+        if (soundEnabled) {
+            stopSound()
+        } else {
+            startSound()
+        }
     }
-
-    initSound();
 
     return (
         <div className="sound" onClick={toggleSound}>
