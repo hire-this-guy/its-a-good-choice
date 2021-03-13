@@ -2,7 +2,7 @@
 
 Among other small things these are main topics that require polishing/doing
 
-[ ] sound
+[+] sound
 
 [ ] tests
 
