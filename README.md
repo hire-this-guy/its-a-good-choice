@@ -1,65 +1,33 @@
-## TODO
+# Hi there, I hope you have a nice day
 
-Among other small things these are main topics that require polishing/doing
+## Running the app
 
-[+] sound
-
-[x] tests
-
-[+] use proper font
-
-[ ] readme
-
-[ ] check if naming makes sense
+- Nobody likes autoplay sound so the metronome starts silent. The button in the bottom right corner enables the sound.
 
 ## Choices I made
 
-- simple css styling - as long as I can get away without introducing new tools, I'm fine with that. And syntax of css variables is not that bad once you get used to it
-- no redux - it would be an overkill for such a simple app
+- Plain css for styling - with css variables I did not need to use a preprocessor, and it allowed me to skip additional dependencies. I'm not a fan of styled components so I did not consider them.
 
-# Getting Started with Create React App
+- No redux - it would be overkill for such a simple app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- I opted to write tests over fetching additional songs from an API as I think they are more important.
 
-## Available Scripts
+- From the beginning I've recognized the difficulty of a metronome to be keeping sound and visualization in sync, knowing how notoriously inaccurate javascript timers can be. I've opted for css animations that can be offloaded off the main thread and Web Audio API that is also supposed to be using an accurate clock.
 
-In the project directory, you can run:
+- Undoubtedly the most time-consuming piece was the sound. I've played with a couple of libraries but I could not achieve a satisfying result so I've opted for a simple homemade solution.
 
-### `npm start`
+- The project did not call for a more elaborate folder structure.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Testids are grouped in one enum common for all the components. Given the size of the project and nature of the tests (being more integration than unit) I can live with this coupling for now.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## What else I would do
 
-### `npm test`
+- I'd fetch the songs :)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- I'd revisit the sound to make it more pleasant
 
-### `npm run build`
+- I've left a TODO in the code for minor improvement - code is never perfect
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tested in the browsers
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- I've tested the project in Firefox and Chrome, I'm on linux so I had no access to Safari.
