@@ -22,7 +22,6 @@ body {
 	background: var(--c-app-bg);
 	color: var(--c-app-txt);
 	text-align: center;
-	font-family: Roboto, sans-serif;
 }
 
 .app-container {
