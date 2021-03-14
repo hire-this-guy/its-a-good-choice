@@ -11,6 +11,7 @@
 	border: 0;
 	transition: all var(--t-default);
 	cursor: pointer;
+	outline: none;
 }
 .bpm-button:hover {
 	background: var(--c-btn-hover);
