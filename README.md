@@ -2,7 +2,17 @@
 
 ## Running the app
 
+- Live version of the app is deployed [here](https://hire-this-guy.netlify.app/).
+
 - Nobody likes autoplay sound so the metronome starts silent. The button in the bottom right corner enables the sound.
+
+- The project was created with Create React App so the usual scripts apply:
+
+  `npm ci` - to install
+
+  `npm run start` - watch and serve
+
+  `npm test` - run the tests
 
 ## Choices I made
 

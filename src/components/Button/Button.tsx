@@ -16,8 +16,8 @@ function Button(props: ButtonProps) {
 		<button
 			className={`bpm-button ${additionalClassName()}`}
 			onClick={() => setBpm(props.bpm)}
-            data-testid={TestId.bpmSelector}
-        >
+			data-testid={TestId.bpmSelector}
+		>
 			{props.bpm} BPM
 		</button>
 	);

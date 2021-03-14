@@ -1,4 +1,4 @@
 export enum TestId {
-    bpmSelector = "bpm-selector",
-    currentBpm = "current-bpm"
+	bpmSelector = "bpm-selector",
+	currentBpm = "current-bpm",
 }

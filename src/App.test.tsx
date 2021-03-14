@@ -6,6 +6,8 @@ import { TestId } from "./testids";
 
 test("shows selected bpm at start", async () => {
 	render(<App />);
-    await waitFor(() => screen.getByTestId(TestId.currentBpm));
-	expect(screen.getByTestId(TestId.currentBpm).textContent).toBe(`${config.bpm[0]}`)
+	await waitFor(() => screen.getByTestId(TestId.currentBpm));
+	expect(screen.getByTestId(TestId.currentBpm).textContent).toBe(
+		`${config.bpm[0]}`
+	);
 });
